@@ -1,0 +1,55 @@
+---
+// Layout
+import Layout from "../../layouts/Layout.astro";
+
+// Astro Assets
+import { Image } from 'astro:assets';
+
+// Components
+import { ToggleTheme } from "../../components/ToggleTheme";
+
+// Icons
+import Github from "../../../public/icons/github-icon.svg";
+import Linkedin from "../../../public/icons/linkedin.svg";
+---
+
+<Layout title="Ignacio Figueroa">
+	<main>
+		<div class="grid grid-cols-1 grid-rows-3 md:grid-rows-4 md:grid-cols-4 gap-2 md:gap-4 h-screen">
+			<div class="bg-transparent flex flex-col gap-2 justify-center col-span-1 md:col-span-2 rounded-lg">
+				<span>Hola, bienvenido!</span>
+			  	<h1 class="font-bold text-3xl bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-transparent bg-clip-text">Soy Ignacio Figueroa</h1>
+				<p>Desarrollador Web</p>
+			</div>
+			<div class="bg-transparent col-span-1 md:col-span-2 row-span-1 md:row-span-2 grid grid-cols-2 gap-2 md:gap-4">
+					<div class="bg-violet-700 rounded-lg hover:scale-105 duration-200 flex flex-col justify-center items-center">
+						<Image src={Github} alt="Linkedin" class="w-20 h-20"/>
+					</div>
+					<div class="bg-[#3681cd] hover:scale-105 duration-200 rounded-lg flex flex-col justify-center items-center">
+						<Image src={Linkedin} alt="Linkedin" class="w-20 h-20"/>
+					</div>
+					<ToggleTheme client:load/>
+					<div class="bg-gradient-to-r from-blue-200 to-cyan-200 text-2xl rounded-lg flex justify-center items-center text-black">			
+						<div>
+							<a href="/" class="cursor-pointer">EN</a>
+							<span>/</span>
+							<a href="/es" class="cursor-pointer">ES</a>
+						</div>
+					</div>
+			</div>
+			<a href="/projects" class="bg-gradient-to-r from-violet-500 to-purple-500 font-bold text-3xl flex justify-center items-center col-span-1 md:col-span-2 rounded-lg hover:-translate-y-2 duration-200">
+				<h2 class="text-white animate-bounce">Mirá mis proyectos!</h2>
+		    </a>
+			<div class="bg-transparent border-[1px] border-content rounded-lg">
+				<span>04</span>
+			</div>
+			<div class="bg-transparent border-[1px] border-content rounded-lg">
+				<span>05</span>
+			</div>
+			<div class="bg-gradient-to-r from-fuchsia-500 to-pink-500 text-white flex justify-center items-center col-span-1 md:col-span-2 rounded-lg text-center">
+				<p>Disfruto en explorar nuevos retos en programación, soy estusiasta de Next.js, React y Astro.</p>
+			</div>
+		</div>
+	</main>
+</Layout>
+
