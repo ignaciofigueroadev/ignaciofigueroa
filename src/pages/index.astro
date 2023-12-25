@@ -2,15 +2,8 @@
 // Layout
 import Layout from '../layouts/Layout.astro';
 
-// Astro assets
-import { Image } from 'astro:assets';
-
 // Components
 import { ToggleTheme } from '../components/ToggleTheme';
-
-// Icons
-import Github from "../icons/github-icon.svg";
-import Linkedin from "../icons/linkedin.svg";
 ---
 
 <Layout title="Ignacio Figueroa">
@@ -23,10 +16,10 @@ import Linkedin from "../icons/linkedin.svg";
 			</div>
 			<div class="bg-transparent col-span-1 md:col-span-2 row-span-1 md:row-span-2 grid grid-cols-2 gap-2 md:gap-4">
 					<a href="https://github.com/ignaciofigueroadev" target="_blank" class="bg-violet-700 rounded-lg hover:scale-105 duration-200 flex flex-col justify-center items-center">
-						<Image src={Github} alt="Linkedin" class="w-20 h-20"/>
+						<img src={"../icons/github-icon.svg"} alt="Linkedin" class="w-20 h-20"/>
 					</a>
 					<a href="https://www.linkedin.com/in/ignacio-figueroa-0a1ba0263/" target="_blank" class="bg-[#3681cd] hover:scale-105 duration-200 rounded-lg flex flex-col justify-center items-center">
-						<Image src={Linkedin} alt="Linkedin" class="w-20 h-20"/>
+						<img src={"../icons/linkedin.svg"} alt="Linkedin" class="w-20 h-20"/>
 					</a>	
 					<ToggleTheme client:load/>
 					<div class="bg-gradient-to-r from-blue-200 to-cyan-200 text-2xl rounded-lg flex justify-center items-center text-black">			
