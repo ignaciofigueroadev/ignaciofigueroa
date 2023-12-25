@@ -27,7 +27,7 @@ export function ToggleTheme() {
       className="rounded-lg flex justify-center items-center hover:scale-105 duration-200 cursor-default bg-gradient-to-r from-pink-500 to-rose-500"
     >
       <img
-        src={theme === "dark" ? "/src/icons/sun.svg" : "/src/icons/moon.svg"}
+        src={theme === "dark" ? "/icons/sun.svg" : "/icons/moon.svg"}
         alt="Theme"
         className="w-20 h-20"
       />
