@@ -6,6 +6,7 @@ export function ToggleTheme() {
     typeof window !== "undefined"
       ? localStorage.getItem("theme") || "light"
       : "light";
+
   const [theme, setTheme] = useState(initialTheme);
 
   useEffect(() => {
