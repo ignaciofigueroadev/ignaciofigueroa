@@ -24,7 +24,7 @@ export function ToggleTheme() {
   return (
     <button
       onClick={toggleTheme}
-      className="rounded-lg flex justify-center items-center hover:scale-105 duration-200 cursor-default bg-gradient-to-r from-pink-500 to-rose-500"
+      className="rounded-lg flex justify-center items-center hover:scale-105 duration-200 cursor-default bg-gradient-to-r from-amber-200 to-yellow-500 md:col-span-1 md:row-span-1"
     >
       <img
         src={theme === "dark" ? "/icons/sun.svg" : "/icons/moon.svg"}

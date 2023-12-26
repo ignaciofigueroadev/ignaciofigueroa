@@ -1,47 +1,37 @@
 ---
-// Layout
-import Layout from "../../layouts/Layout.astro";
-
 // Components
-import { ToggleTheme } from "../../components/ToggleTheme";
+import AboutMe from '../../components/AboutMe.astro';
+import Card from "../../components/Card/index.astro";
+import Contact from '../../components/Contact.astro';
+import Intro from '../../components/Intro.astro';
+import Projects from '../../components/Projects.astro';
+import { ToggleTheme } from '../../components/ToggleTheme';
+
+// Layout
+import Layout from '../../layouts/Layout.astro';
 ---
 
 <Layout title="Ignacio Figueroa">
 	<main>
-		<div class="grid grid-cols-1 grid-rows-3 md:grid-rows-4 md:grid-cols-4 gap-2 md:gap-4 h-screen">
-			<div class="bg-transparent flex flex-col gap-2 justify-center col-span-1 md:col-span-2 rounded-lg">
-				<span>Hola, bienvenido!</span>
-			  	<h1 class="font-bold text-3xl bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-transparent bg-clip-text">Soy Ignacio Figueroa</h1>
-				<p>Desarrollador Web</p>
-			</div>
-			<div class="bg-transparent col-span-1 md:col-span-2 row-span-1 md:row-span-2 grid grid-cols-2 gap-2 md:gap-4">
-					<div class="bg-violet-700 rounded-lg hover:scale-105 duration-200 flex flex-col justify-center items-center">
-						<img src={"/icons/github.svg"} alt="Github" class="w-20 h-20"/>
-					</div>
-					<div class="bg-[#3681cd] hover:scale-105 duration-200 rounded-lg flex flex-col justify-center items-center">
-						<img src={"/icons/linkedin.svg"} alt="Linkedin" class="w-20 h-20"/>
-					</div>
-					<ToggleTheme client:load/>
-					<div class="bg-gradient-to-r from-blue-200 to-cyan-200 text-2xl rounded-lg flex justify-center items-center text-black">			
-						<div>
-							<a href="/" class="cursor-pointer">EN</a>
-							<span>/</span>
-							<a href="/es" class="cursor-pointer">ES</a>
-						</div>
-					</div>
-			</div>
-			<a href="/projects" class="bg-gradient-to-r from-violet-500 to-purple-500 font-bold text-3xl flex justify-center items-center col-span-1 md:col-span-2 rounded-lg hover:-translate-y-2 duration-200">
-				<h2 class="text-white animate-bounce">Mirá mis proyectos!</h2>
-		    </a>
-			<div class="bg-transparent border-[1px] border-content rounded-lg">
-				<span>04</span>
-			</div>
-			<div class="bg-transparent border-[1px] border-content rounded-lg">
-				<span>05</span>
-			</div>
-			<div class="bg-gradient-to-r from-fuchsia-500 to-pink-500 text-white flex justify-center items-center col-span-1 md:col-span-2 rounded-lg text-center">
-				<p>Disfruto en explorar nuevos retos en programación, soy estusiasta de Next.js, React y Astro.</p>
-			</div>
+		<div class="m-auto p-2 grid gap-2 max-w-6xl overflow-hidden relative w-full sm:p-4 sm:gap-2 md:grid-cols-2 md:gap-3 md:p-6 lg:h-screen lg:grid-cols-4 lg:gap-4 lg:max-h-[800px]">
+			<Intro />
+			<AboutMe />
+			<Contact />
+			<Projects />
+			<Card colSpan="lg:col-span-1" rowSpan="md:row-span-1" className="flex justify-center items-center text-content bg-gradient-to-r from-amber-500 to-pink-500">
+				<a href="/">EN</a>
+				<span>/</span>
+				<a href="/es">ES</a>
+			</Card>		
+			<div class="grid gap-2">
+				<Card colSpan="md:col-span-1" rowSpan="md:row-span-1" className='bg-gradient-to-r from-cyan-500 to-blue-500 text-black flex justify-center'>
+					<img src="/public/icons/linkedin.svg" alt="Linkedin">
+				</Card>
+				<Card colSpan="md:col-spa" rowSpan="md:row-span-1" className='bg-gradient-to-r from-slate-900 to-slate-700 flex justify-center'>
+					<img src="/public/icons/github.svg" alt="Github">
+				</Card>
+			</div>		
+			<ToggleTheme client:load />		
 		</div>
 	</main>
 </Layout>
