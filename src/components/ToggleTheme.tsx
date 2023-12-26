@@ -24,7 +24,11 @@ export function ToggleTheme() {
   return (
     <button
       onClick={toggleTheme}
-      className="rounded-lg flex justify-center items-center hover:scale-105 duration-200 cursor-default bg-gradient-to-r from-amber-200 to-yellow-500 md:col-span-1 md:row-span-1"
+      className={`rounded-lg flex justify-center items-center ${
+        theme === "dark"
+          ? "bg-gradient-to-r from-amber-200 to-yellow-500"
+          : "bg-[#000]"
+      } hover:scale-105 duration-200 cursor-default  md:col-span-1 md:row-span-1 animate-fade animate-duration-[1500ms] animate-normal`}
     >
       <img
         src={theme === "dark" ? "/icons/sun.svg" : "/icons/moon.svg"}

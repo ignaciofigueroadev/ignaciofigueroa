@@ -18,7 +18,7 @@ const { title } = Astro.props;
 		<title>{title}</title>
 		<ViewTransitions  transition:animate="fade"/>
 	</head>
-	<body class="container mx-auto px-2 py-8 md:p-0 bg-background-color text-content">
+	<body class="container mx-auto px-6 py-8 md:p-0 bg-background-color text-content">
 		<slot />
 	</body>
 </html>
@@ -26,21 +26,21 @@ const { title } = Astro.props;
 <style is:global>
 :root {
     --color-bkg: #f2edf7;
-    --color-content: ##0d0c10;
+    --color-content: #000;
 }
 @media (prefers-color-scheme: dark) {
 	:root {
-		--color-bkg: #0d0c10;
+		--color-bkg: #000;
 		--color-content: #f2edf7;
 	}
 }
 [data-theme="dark"] {
-	--color-bkg: #0d0c10;
+	--color-bkg: #000;
 	--color-content: #f2edf7;
 }
 [data-theme="light"] {
 	--color-bkg: #f2edf7;
-	--color-content: #0d0c10;
+	--color-content: #000;
 }
 ::-webkit-scrollbar {
 	width: 0.45rem;

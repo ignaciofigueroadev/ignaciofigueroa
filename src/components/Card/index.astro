@@ -14,17 +14,13 @@ const { title, body, colSpan, rowSpan, href, className } = Astro.props;
 ---
 
 <div
-  class={`${className} card group overflow-hidden rounded-lg p-6 h-auto ${
+  class={`${className} overflow-hidden rounded-lg p-6 h-auto ${
     colSpan || "md:col-span-2"
   } ${rowSpan || ""}`}
 >
   {
     href ? (
-      <a href={href} class="h-full w-full ddd">
-        <img
-          src="/public/icons/arrow-card.svg"
-          class="h-6 float-right group-hover:text-primary-500 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform ease-in-out duration-100"
-        />
+      <a href={href} class="h-full w-full cursor-default">
         <Content title={title} body={body}>
           <slot />
         </Content>
