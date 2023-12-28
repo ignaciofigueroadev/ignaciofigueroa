@@ -1,0 +1,32 @@
+:root {
+  --color-bkg: #f2edf7;
+  --color-content: #000;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bkg: #000;
+    --color-content: #f2edf7;
+  }
+}
+[data-theme="dark"] {
+  --color-bkg: #000;
+  --color-content: #f2edf7;
+}
+[data-theme="light"] {
+  --color-bkg: #f2edf7;
+  --color-content: #000;
+}
+::-webkit-scrollbar {
+  width: 0.45rem;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #6b7280;
+  border-radius: 0.375rem;
+  -webkit-border-radius: 0.375rem;
+  -moz-border-radius: 0.375rem;
+  -ms-border-radius: 0.375rem;
+  -o-border-radius: 0.375rem;
+}

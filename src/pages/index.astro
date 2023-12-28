@@ -2,6 +2,7 @@
 // Components
 import AboutMe from '../components/AboutMe.astro';
 import Card from "../components/Card/index.astro";
+import ChangeLanguage from '../components/ChangeLanguage.astro';
 import Contact from '../components/Contact.astro';
 import Intro from '../components/Intro.astro';
 import Now from '../components/Now.astro';
@@ -19,11 +20,7 @@ import Layout from '../layouts/Layout.astro';
 			<AboutMe />
 			<Contact />
 			<Projects />
-			<Card colSpan="lg:col-span-1" rowSpan="md:row-span-1" className="flex justify-center items-center gap-5 text-3xl text-white bg-gradient-to-r from-amber-500 to-pink-500 animate-fade animate-duration-[1500ms] animate-normal">
-				<a href="/" class="hover:-translate-y-1 duration-100">EN</a>
-				<span>/</span>
-				<a href="/es" class="hover:-translate-y-1 duration-100">ES</a>
-			</Card>		
+			<ChangeLanguage />		
 			<div class="grid gap-3">
 				<Card href='https://www.linkedin.com/in/ignacio-figueroa-0a1ba0263/' colSpan="md:col-span-1" rowSpan="md:row-span-1" className='bg-gradient-to-r from-cyan-500 to-blue-500 hover:scale-105 duration-150 animate-fade animate-duration-[1500ms] animate-normal'>
 					<div class="flex justify-center items-center h-full">
@@ -37,7 +34,7 @@ import Layout from '../layouts/Layout.astro';
 				</Card>
 			</div>		
 			<div class="grid">
-				<ToggleTheme client:load  />	
+				<ToggleTheme client:only  />	
 				<Now />
 			</div>
 		</div>

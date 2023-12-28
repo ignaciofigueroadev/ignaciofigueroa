@@ -5,11 +5,12 @@ import { ToggleTheme } from '../../components/ToggleTheme';
 import AboutMeEs from './components/AboutMeEs.astro';
 import ContactEs from './components/ContactEs.astro';
 import IntroEs from './components/IntroEs.astro';
+import NowEs from "./components/NowEs.astro";
 import ProjectsEs from './components/ProjectsEs.astro';
 
 // Layout
+import ChangeLanguage from "../../components/ChangeLanguage.astro";
 import Layout from '../../layouts/Layout.astro';
-import NowEs from "./components/NowEs.astro";
 ---
 
 <Layout title="Ignacio Figueroa">
@@ -19,11 +20,7 @@ import NowEs from "./components/NowEs.astro";
 			<AboutMeEs />
 			<ContactEs />
 			<ProjectsEs />
-			<Card colSpan="lg:col-span-1" rowSpan="md:row-span-1" className="flex justify-center items-center gap-5 text-3xl text-white bg-gradient-to-r from-amber-500 to-pink-500 animate-fade animate-duration-[1500ms] animate-normal">
-				<a href="/">EN</a>
-				<span>/</span>
-				<a href="/es">ES</a>
-			</Card>		
+			<ChangeLanguage />
 			<div class="grid gap-2">
 				<Card href='https://www.linkedin.com/in/ignacio-figueroa-0a1ba0263/' colSpan="md:col-span-1" rowSpan="md:row-span-1" className='bg-gradient-to-r from-cyan-500 to-blue-500 hover:scale-105 duration-150  animate-fade animate-duration-[1500ms] animate-normal'>
 					<div class="flex justify-center items-center h-full">
@@ -37,7 +34,7 @@ import NowEs from "./components/NowEs.astro";
 				</Card>
 			</div>	
 			<div class="grid">
-				<ToggleTheme client:load />		
+				<ToggleTheme client:only />		
 				<NowEs />
 			</div>	
 		</div>
