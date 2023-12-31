@@ -11,7 +11,7 @@ import "../styles/global.css";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" transition:persist>
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
@@ -22,7 +22,7 @@ import "../styles/global.css";
     <ViewTransitions transition:animate="fade" />
   </head>
   <body
-    class="container mx-auto px-6 py-8 md:p-0 bg-background-color text-content"
+    class="container mx-auto px-16 py-8 md:p-0 bg-background-color text-content max-w-6xl lg:max-h-[800px] min-h-screen"
   >
     <slot />
   </body>

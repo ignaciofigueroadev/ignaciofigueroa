@@ -1,10 +1,62 @@
 ---
+import { ToggleTheme } from "../../components/ToggleTheme";
 import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout
   title="Ignacio Figueroa | Projects"
-  description="Acá vas a encontrar mís proyectos!"
+  description="Here you will find my projects!"
 >
-  <h2>En esta página vas a econtrar mis proyectos.</h2>
+<div class="flex items-center justify-between pt-8">
+    <a href="/es" class="text-white px-6 py-3 rounded-full bg-gradient-to-r from-fuchsia-500 to-pink-500">Volver</a>
+    <ToggleTheme client:only className="w-16 h-16 rounded-full p-5" />
+</div>
+  <h2 class="font-bold text-3xl py-8">En esta sección vas a encontrar mis proyectos!</h2>
+  <section
+    class="grid grid-cols-1 lg:grid-cols-3 w-full gap-12 mx-auto pt-16 pb-16 h-screen"
+  >
+    <div class="min-h-80 lg:col-span-2">
+      <div class="relative rounded-lg p-8 h-full">
+        <div class="absolute -inset-px bg-gradient-to-r from-yellow-400 to-pink-400 rounded-lg"></div>
+        <div class="absolute inset-0 bg-background-color rounded-lg"></div>
+        <div class="relative z-40 text-lg"></div>
+      </div>
+    </div>
+    <div class="min-h-80 rounded-lg">
+      <img
+        src="/images/example.png"
+        class="w-full h-full flex justify-center items-center object-cover rounded-lg"
+      />
+    </div>
+    <div class="min-h-80 rounded-lg">
+      <img
+        src="/images/example.png"
+        class="w-full h-full flex justify-center items-center object-cover rounded-lg"
+      />
+    </div>
+    <div
+      class="min-h-80 rounded-lg lg:col-span-2 relative"
+    >
+      <div class="relative rounded-lg p-8 h-full">
+        <div class="absolute -inset-px bg-gradient-to-r from-yellow-400 to-pink-400 rounded-lg" aria-hidden="true"></div>
+        <div class="absolute inset-0 bg-background-color rounded-lg" aria-hidden="true"></div>
+        <div class="z-10 text-zinc-100">Nice border around me!</div>
+      </div>
+    </div>
+    <div
+      class="min-h-80 rounded-lg lg:col-span-2 relative"
+    >
+      <div class="relative rounded-lg p-8 h-full">
+        <div class="absolute -inset-px bg-gradient-to-r from-yellow-400 to-pink-400 rounded-lg" aria-hidden="true"></div>
+        <div class="absolute inset-0 bg-background-color rounded-lg" aria-hidden="true"></div>
+        <div class="z-10 text-zinc-100">Nice border around me!</div>
+      </div>
+    </div>
+    <div class="min-h-80 rounded-lg">
+      <img
+        src="/images/example.png"
+        class="w-full h-full flex justify-center items-center object-cover rounded-lg"
+      />
+    </div>
+  </section>
 </Layout>
