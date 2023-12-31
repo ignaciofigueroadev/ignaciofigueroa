@@ -1,45 +1,58 @@
 ---
 // Components
 import Card from "../../components/Card/index.astro";
-import { ToggleTheme } from '../../components/ToggleTheme';
-import AboutMeEs from './components/AboutMeEs.astro';
-import ContactEs from './components/ContactEs.astro';
-import IntroEs from './components/IntroEs.astro';
+import { ToggleTheme } from "../../components/ToggleTheme";
+import AboutMeEs from "./components/AboutMeEs.astro";
+import ContactEs from "./components/ContactEs.astro";
+import IntroEs from "./components/IntroEs.astro";
 import NowEs from "./components/NowEs.astro";
-import ProjectsEs from './components/ProjectsEs.astro';
+import ProjectsEs from "./components/ProjectsEs.astro";
 
 // Layout
 import ChangeLanguage from "../../components/ChangeLanguage.astro";
-import Layout from '../../layouts/Layout.astro';
+import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="Ignacio Figueroa">
-	<main>
-		<div class="m-auto p-2 grid gap-2 max-w-6xl overflow-hidden relative w-full sm:p-4 sm:gap-2 md:grid-cols-2 md:gap-3 md:p-6 lg:h-screen lg:grid-cols-4 lg:gap-4 lg:max-h-[800px]">
-			<IntroEs />
-			<AboutMeEs />
-			<ContactEs />
-			<ProjectsEs />
-			<ChangeLanguage />
-			<div class="grid gap-2">
-				<Card href='https://www.linkedin.com/in/ignacio-figueroa-0a1ba0263/' colSpan="md:col-span-1" rowSpan="md:row-span-1" className='bg-gradient-to-r from-cyan-500 to-blue-500 hover:scale-105 duration-150  animate-fade animate-duration-[1500ms] animate-normal' target="_blank">
-					<div class="flex flex-col justify-center items-center gap-3 h-full">
-						<img src="/icons/linkedin.svg" alt="Linkedin" class="w-16 h-16">
-						<h3 class="font-bold text-white text-xs">LinkedIn</h3>
-					</div>
-				</Card>
-				<Card href='https://github.com/ignaciofigueroadev'  colSpan="md:col-spa" rowSpan="md:row-span-1" className='bg-gradient-to-r from-slate-900 to-slate-700 flex justify-center items-center hover:scale-105 duration-150 animate-fade animate-duration-[1500ms] animate-normal' target="_blank">
-					<div class="flex flex-col justify-center items-center gap-3 h-full">
-						<img src="/icons/github.svg" alt="Github" class="w-16 h-16">
-						<h3 class="font-bold text-white text-xs">Github</h3>
-					</div>
-				</Card>
-			</div>	
-			<div class="grid">
-				<ToggleTheme client:only />		
-				<NowEs />
-			</div>	
-		</div>
-	</main>
+  <main>
+    <div
+      class="m-auto p-2 grid gap-2 max-w-6xl overflow-hidden relative w-full sm:p-4 sm:gap-2 md:grid-cols-2 md:gap-3 md:p-6 lg:h-screen lg:grid-cols-4 lg:gap-4 lg:max-h-[800px]"
+    >
+      <IntroEs />
+      <AboutMeEs />
+      <ContactEs />
+      <ProjectsEs />
+      <ChangeLanguage />
+      <div class="grid gap-2">
+        <Card
+          href="https://www.linkedin.com/in/ignacio-figueroa-0a1ba0263/"
+          colSpan="md:col-span-1"
+          rowSpan="md:row-span-1"
+          className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:scale-105 duration-150  animate-fade animate-duration-[1500ms] animate-normal"
+          target="_blank"
+        >
+          <div class="flex flex-col justify-center items-center gap-3 h-full">
+            <img src="/icons/linkedin.svg" alt="Linkedin" class="w-16 h-16" />
+            <h3 class="font-bold text-white text-xs">LinkedIn</h3>
+          </div>
+        </Card>
+        <Card
+          href="https://github.com/ignaciofigueroadev"
+          colSpan="md:col-spa"
+          rowSpan="md:row-span-1"
+          className="bg-gradient-to-r from-slate-900 to-slate-700 flex justify-center items-center hover:scale-105 duration-150 animate-fade animate-duration-[1500ms] animate-normal"
+          target="_blank"
+        >
+          <div class="flex flex-col justify-center items-center gap-3 h-full">
+            <img src="/icons/github.svg" alt="Github" class="w-16 h-16" />
+            <h3 class="font-bold text-white text-xs">Github</h3>
+          </div>
+        </Card>
+      </div>
+      <div class="grid">
+        <ToggleTheme client:only />
+        <NowEs />
+      </div>
+    </div>
+  </main>
 </Layout>
-

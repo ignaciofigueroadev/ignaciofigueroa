@@ -2,7 +2,11 @@
 import Card from "./Card/index.astro";
 ---
 
-<Card colSpan="md:col-span-1" rowSpan="md:row-span-2" className="bg-gradient-to-r from-violet-500 to-purple-500 text-white animate-fade-right animate-once animate-normal">
+<Card
+  colSpan="md:col-span-1"
+  rowSpan="md:row-span-2"
+  className="bg-gradient-to-r from-violet-500 to-purple-500 text-white animate-fade-right animate-once animate-normal"
+>
   <div class="h-full">
     <header class="flex items-center">
       <h1 class="text-xl font-bold text-pretty">
@@ -12,9 +16,11 @@ import Card from "./Card/index.astro";
     <div class="flex flex-col mt-4 gap-5">
       <div class="flex flex-col">
         <h2>Contact Details</h2>
-        <a href="mailto:ignaciofigueroadev@gmail.com" class="text-xs underline">ignaciofigueroadev@gmail.com</a>
+        <a href="mailto:ignaciofigueroadev@gmail.com" class="text-xs underline"
+          >ignaciofigueroadev@gmail.com</a
+        >
       </div>
-        <p>Argentina, Buenos Aires.</p>
+      <p>Argentina, Buenos Aires.</p>
     </div>
   </div>
 </Card>
