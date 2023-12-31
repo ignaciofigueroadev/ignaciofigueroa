@@ -4,7 +4,7 @@ interface ToggleThemeProps {
   className?: string;
 }
 
-export function ToggleTheme({className}: ToggleThemeProps) {
+export function ToggleTheme({ className }: ToggleThemeProps) {
   const getInitialTheme = () => {
     const userPrefersDark = window.matchMedia(
       "(prefers-color-scheme: dark)",

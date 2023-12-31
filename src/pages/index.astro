@@ -53,7 +53,11 @@ import Layout from "../layouts/Layout.astro";
         </Card>
       </div>
       <div class="grid">
-        <ToggleTheme client:only transition:persist className="rounded-lg"/>
+        <ToggleTheme
+          client:only
+          transition:persist
+          className="rounded-lg py-8 lg:py-12"
+        />
         <Now />
       </div>
     </div>
