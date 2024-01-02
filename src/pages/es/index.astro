@@ -17,18 +17,20 @@ import Layout from "../../layouts/Layout.astro";
   title="Ignacio Figueroa - Desarrollador de Software"
   description="Hola! Soy Ignacio Figueroa, Desarrollador de Software. Chequeá mis proyectos web y vení a conocerme, nos vemos en el ámbito digital!"
 >
-  <main class="m-auto p-2 grid gap-2 overflow-hidden relative w-full sm:p-4 sm:gap-2 md:grid-cols-2 md:gap-3 md:p-6 lg:h-screen lg:grid-cols-4 lg:gap-4">
+  <main
+    class="m-auto p-2 grid gap-2 overflow-hidden relative w-full sm:p-4 sm:gap-2 md:grid-cols-2 md:gap-3 md:p-6 lg:h-screen lg:grid-cols-4 lg:gap-4"
+  >
     <IntroEs />
     <AboutMeEs />
     <ContactEs />
     <ProjectsEs />
     <ChangeLanguage />
-    <div class="grid gap-2">
+    <div class="grid gap-5">
       <Card
         href="https://www.linkedin.com/in/ignacio-figueroa-0a1ba0263/"
         colSpan="md:col-span-1"
         rowSpan="md:row-span-1"
-        className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:scale-105 duration-150  animate-fade animate-duration-[1500ms] animate-normal"
+        className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:scale-105 duration-150 animate-fade animate-duration-[1500ms] animate-normal"
         target="_blank"
       >
         <div class="flex flex-col justify-center items-center gap-3 h-full">
@@ -50,11 +52,7 @@ import Layout from "../../layouts/Layout.astro";
       </Card>
     </div>
     <div class="grid">
-      <ToggleTheme
-        client:only
-        className="rounded-lg"
-        className="rounded-lg"
-      />
+      <ToggleTheme client:only transition:persist className="rounded-lg" />
       <NowEs />
     </div>
   </main>
