@@ -1,20 +1,20 @@
 :root {
   --color-bkg: #f2edf7;
-  --color-content: #000;
+  --color-content: #24293E;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bkg: #000;
+    --color-bkg: #24293E;
     --color-content: #f2edf7;
   }
 }
 [data-theme="dark"] {
-  --color-bkg: #000;
+  --color-bkg: #24293E;
   --color-content: #f2edf7;
 }
 [data-theme="light"] {
   --color-bkg: #f2edf7;
-  --color-content: #000;
+  --color-content: #24293E;
 }
 ::-webkit-scrollbar {
   width: 0.45rem;
