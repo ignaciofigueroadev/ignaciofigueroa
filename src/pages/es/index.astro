@@ -2,14 +2,14 @@
 // Components
 import AboutMe from "../../components/AboutMe.astro";
 import Card from "../../components/Card/index.astro";
+import ChangeLanguage from "../../components/ChangeLanguage.astro";
 import Contact from "../../components/Contact.astro";
 import Intro from "../../components/Intro.astro";
+import Now from "../../components/Now.astro";
+import Projects from "../../components/Projects.astro";
 import { ToggleTheme } from "../../components/ToggleTheme.tsx";
-import NowEs from "./components/NowEs.astro";
-import ProjectsEs from "./components/ProjectsEs.astro";
 
 // Layout
-import ChangeLanguage from "../../components/ChangeLanguage.astro";
 import Layout from "../../layouts/Layout.astro";
 ---
 
@@ -23,7 +23,7 @@ import Layout from "../../layouts/Layout.astro";
     <Intro />
     <AboutMe />
     <Contact />
-    <ProjectsEs />
+    <Projects />
     <ChangeLanguage />
     <div class="grid gap-5">
       <Card
@@ -53,7 +53,7 @@ import Layout from "../../layouts/Layout.astro";
     </div>
     <div class="grid">
       <ToggleTheme client:only transition:persist className="rounded-lg" />
-      <NowEs />
+      <Now />
     </div>
   </main>
 </Layout>

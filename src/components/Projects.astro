@@ -1,15 +1,21 @@
 ---
+// Components
 import Card from "./Card/index.astro";
+
+// i18n
+import { getI18N } from "../locales";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
 ---
 
 <Card
   colSpan="lg:col-span-2"
   rowSpan="md:row-span-1"
   href="/projects"
-  title="Projects"
+  title={i18n.CHECK_MY_PROJECTS.TITLE}
   className="text-content bg-gradient-to-r from-fuchsia-500 to-pink-500 text-white hover:-translate-y-3 duration-200 cursor-default flex-col animate-fade animate-duration-[1500ms] animate-normal relative"
 >
-  <p>Check my projects!</p>
+  <p>{i18n.CHECK_MY_PROJECTS.SUBTITLE}</p>
   <div class="absolute inset-0 flex justify-end items-end pr-4 pb-4">
     <img src="/icons/arrow.svg" alt="Go to projects page" />
   </div>

@@ -1,19 +1,28 @@
 {
   "INTRO": {
-    "INTRO_WELCOME": "bienvenido",
-    "INTRO_GREETING": "Hola, soy ",
-    "INTRO_DESCRIPTION": "Desarrollador de software con fuerte enfoque en la experiencia de usuario, animaciones, y calidad.",
-    "INTRO_NAME": "Ignacio Figueroa"
+    "WELCOME": "bienvenido",
+    "GREETING": "Hola, soy",
+    "DESCRIPTION": "Desarrollador de software con fuerte enfoque en la experiencia de usuario, animaciones, y calidad.",
+    "NAME": "Ignacio Figueroa"
   },
   "ABOUT_ME": {
-    "ABOUT_ME_TITLE": "Sobre Mí",
-    "ABOUT_ME_SUBTITLE": "Desarrollador Frontend de Argentina.",
-    "ABOUT_ME_PREFERENCES": "Mis principales herramientas de elección incluyen:"
+    "TITLE": "Sobre Mí",
+    "SUBTITLE": "Desarrollador Frontend de Argentina.",
+    "PREFERENCES": "Mis principales herramientas de elección incluyen:"
   },
   "CONTACT": {
-    "CONTACT_TITLE": "Empecemos a trabajar juntos!",
-    "CONTACT_DETAILS_TITLE": "Detalles de contacto",
-    "CONTACT_EMAIL": "ignaciofigueroadev@gmail.com",
-    "CONTACT_COUNTRY": "Argentina, Buenos Aires."
+    "TITLE": "Empecemos a trabajar juntos!",
+    "DETAILS_TITLE": "Detalles de contacto",
+    "EMAIL": "ignaciofigueroadev@gmail.com",
+    "COUNTRY": "Argentina, Buenos Aires."
+  },
+  "CHECK_MY_PROJECTS": {
+    "TITLE": "Proyectos",
+    "SUBTITLE": "Mirá mis proyectos!"
+  },
+  "NOW": {
+    "TITLE": "Ahora",
+    "SUBTITLE": "Que estoy haciendo?",
+    "CURRENT_JOB": "Actualmente colaborando en Pawtrics Software LLC"
   }
 }
