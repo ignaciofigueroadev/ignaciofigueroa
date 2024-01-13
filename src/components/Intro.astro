@@ -19,16 +19,18 @@ const i18n = getI18N({ currentLocale });
         <h3 class="text-sm font-light m-0 text-gray-500">
           {i18n.INTRO.INTRO_WELCOME}
         </h3>
-        <p class="m-0 font-light text-xl">
-          {i18n.INTRO.INTRO_GREETING}
-        </p>
-        <h1>
-          <b
-            class="bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-transparent bg-clip-text font-bold"
-          >
-            {i18n.INTRO.INTRO_NAME}</b
-          >
-        </h1>
+        <div class="flex items-center gap-3">
+          <p class="m-0 font-light text-xl">
+            {i18n.INTRO.INTRO_GREETING}
+          </p>
+          <h1>
+            <b
+              class="bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-transparent bg-clip-text font-bold text-4xl"
+            >
+              {i18n.INTRO.INTRO_NAME}</b
+            >
+          </h1>
+        </div>
         <p>
           {i18n.INTRO.INTRO_DESCRIPTION}
         </p>
