@@ -1,5 +1,11 @@
 ---
+// Componentes
 import Card from "./Card/index.astro";
+
+// i18n
+import { getI18N } from "../locales";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
 ---
 
 <Card
@@ -10,13 +16,21 @@ import Card from "./Card/index.astro";
   <div class="flex w-full h-full">
     <div class="flex flex-col justify-between md:max-h-[300px] gap-4">
       <div class="flex flex-col h-full">
-        <h3 class="text-sm font-light m-0 text-gray-500">welcome</h3>
+        <h3 class="text-sm font-light m-0 text-gray-500">
+          {i18n.INTRO.INTRO_WELCOME}
+        </h3>
         <p class="m-0 font-light text-xl">
-          Hi, I'm <b
+          {i18n.INTRO.INTRO_GREETING}
+        </p>
+        <h1>
+          <b
             class="bg-gradient-to-r from-indigo-500 via-fuchsia-700 to-violet-400 inline-block text-transparent bg-clip-text font-bold"
-            >Ignacio Figueroa</b
-          >, a software developer with strong focus on the user experience,
-          animations and quality.
+          >
+            {i18n.INTRO.INTRO_NAME}</b
+          >
+        </h1>
+        <p>
+          {i18n.INTRO.INTRO_DESCRIPTION}
         </p>
       </div>
     </div>

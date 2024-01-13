@@ -1,10 +1,10 @@
 ---
 // Components
+import AboutMe from "../../components/AboutMe.astro";
 import Card from "../../components/Card/index.astro";
+import Contact from "../../components/Contact.astro";
+import Intro from "../../components/Intro.astro";
 import { ToggleTheme } from "../../components/ToggleTheme.tsx";
-import AboutMeEs from "./components/AboutMeEs.astro";
-import ContactEs from "./components/ContactEs.astro";
-import IntroEs from "./components/IntroEs.astro";
 import NowEs from "./components/NowEs.astro";
 import ProjectsEs from "./components/ProjectsEs.astro";
 
@@ -20,9 +20,9 @@ import Layout from "../../layouts/Layout.astro";
   <main
     class="m-auto p-2 grid gap-2 overflow-hidden relative w-full sm:p-4 sm:gap-2 md:grid-cols-2 md:gap-3 md:p-6 lg:h-screen lg:grid-cols-4 lg:gap-4"
   >
-    <IntroEs />
-    <AboutMeEs />
-    <ContactEs />
+    <Intro />
+    <AboutMe />
+    <Contact />
     <ProjectsEs />
     <ChangeLanguage />
     <div class="grid gap-5">

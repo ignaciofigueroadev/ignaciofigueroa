@@ -1,0 +1,19 @@
+{
+  "INTRO": {
+    "INTRO_WELCOME": "welcome",
+    "INTRO_GREETING": "Hi, I'm ",
+    "INTRO_DESCRIPTION": "A software developer with strong focus on the user experience, animations and quality.",
+    "INTRO_NAME": "Ignacio Figueroa"
+  },
+  "ABOUT_ME": {
+    "ABOUT_ME_TITLE": "About Me",
+    "ABOUT_ME_SUBTITLE": "I'm a Frontend developer from Argentina.",
+    "ABOUT_ME_PREFERENCES": "My primary tools of choice includes the following items:"
+  },
+  "CONTACT": {
+    "CONTACT_TITLE": "Let's start working together!",
+    "CONTACT_DETAILS_TITLE": "Contact Details",
+    "CONTACT_EMAIL": "ignaciofigueroadev@gmail.com",
+    "CONTACT_COUNTRY": "Argentina, Buenos Aires."
+  }
+}

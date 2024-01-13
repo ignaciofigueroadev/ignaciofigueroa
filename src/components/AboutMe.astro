@@ -1,31 +1,30 @@
 ---
+// Componentes
 import Card from "./Card/index.astro";
+
+// i18n
+import { getI18N } from "../locales";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
 ---
 
 <Card
   colSpan="md:col-span-1"
   rowSpan="md:row-span-3"
-  title="About me"
+  title={i18n.ABOUT_ME.ABOUT_ME_TITLE}
   className="bg-gradient-to-r from-violet-500 to-purple-500 text-white text-2xl rounded-lg animate-fade-left animate-once animate-normal"
 >
   <div class="flex flex-col gap-2">
-    <p class="text-sm font-light">
-      I'm a Frontend developer from Argentina.
-      <br />
-      My primary tools of choice includes the following items:
-      <ul class="list-disc list-inside text-sm">
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Next.js</li>
-        <li>Astro</li>
-        <li>Nodejs</li>
-        <li>CSS</li>
-        <li>Tailwind</li>
-      </ul>
-    </p>
-    <p class="text-sm font-light">
-      Beyond coding, I'm passionate about sport, I play rugby since when I was
-      13.
-    </p>
+    <p class="text-sm font-light">{i18n.ABOUT_ME.ABOUT_ME_SUBTITLE}</p>
+    <p class="text-sm font-light">{i18n.ABOUT_ME.ABOUT_ME_PREFERENCES}</p>
+    <ul class="list-disc list-inside text-sm">
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Next.js</li>
+      <li>Astro</li>
+      <li>Node.js</li>
+      <li>CSS</li>
+      <li>Tailwind</li>
+    </ul>
   </div>
 </Card>
