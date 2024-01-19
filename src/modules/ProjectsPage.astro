@@ -1,0 +1,80 @@
+---
+// Components
+import ProjectsCard from "../components/ProjectsCard.astro";
+import { ToggleTheme } from "../components/ToggleTheme";
+
+// i18n
+import { getI18N } from "../locales";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+const projects = [
+  {
+    IMAGE: "images/mydevnotes.webp",
+    ALT: "Project - My Dev Notes",
+    TITLE: i18n.MY_PROJECTS.PROJECTS[0].TITLE,
+    DESCRIPTION: i18n.MY_PROJECTS.PROJECTS[0].DESCRIPTION,
+    GITHUB_LINK: i18n.MY_PROJECTS.PROJECTS[0].GITHUB_LINK,
+    LIVE_URL: i18n.MY_PROJECTS.PROJECTS[0].LIVE_URL,
+    TECH_STACK: ["Next.js, Shadcn/ui, Tailwind, SWR, Sanity"],
+  },
+  {
+    IMAGE: "images/mydevnotes.webp",
+    ALT: "Project - My Dev Notes",
+    TITLE: i18n.MY_PROJECTS.PROJECTS[0].TITLE,
+    DESCRIPTION: i18n.MY_PROJECTS.PROJECTS[0].DESCRIPTION,
+    GITHUB_LINK: i18n.MY_PROJECTS.PROJECTS[0].GITHUB_LINK,
+    LIVE_URL: i18n.MY_PROJECTS.PROJECTS[0].LIVE_URL,
+    TECH_STACK: ["Next.js, Shadcn/ui, Tailwind, SWR, Sanity"],
+  },
+  {
+    IMAGE: "images/mydevnotes.webp",
+    ALT: "Project - My Dev Notes",
+    TITLE: i18n.MY_PROJECTS.PROJECTS[0].TITLE,
+    DESCRIPTION: i18n.MY_PROJECTS.PROJECTS[0].DESCRIPTION,
+    GITHUB_LINK: i18n.MY_PROJECTS.PROJECTS[0].GITHUB_LINK,
+    LIVE_URL: i18n.MY_PROJECTS.PROJECTS[0].LIVE_URL,
+    TECH_STACK: ["Next.js, Shadcn/ui, Tailwind, SWR, Sanity"],
+  },
+  {
+    IMAGE: "images/mydevnotes.webp",
+    ALT: "Project - My Dev Notes",
+    TITLE: i18n.MY_PROJECTS.PROJECTS[0].TITLE,
+    DESCRIPTION: i18n.MY_PROJECTS.PROJECTS[0].DESCRIPTION,
+    GITHUB_LINK: i18n.MY_PROJECTS.PROJECTS[0].GITHUB_LINK,
+    LIVE_URL: i18n.MY_PROJECTS.PROJECTS[0].LIVE_URL,
+    TECH_STACK: ["Next.js, Shadcn/ui, Tailwind, SWR, Sanity"],
+  },
+];
+---
+
+<section class="p-4">
+  <div class="flex justify-between items-center">
+    <a
+      href={i18n.MY_PROJECTS.GO_BACK}
+      class="bg-violet-700 py-2 px-5 rounded-full"
+      >{i18n.MY_PROJECTS.GO_BACK_TITLE}</a
+    >
+    <ToggleTheme client:only className="rounded-full w-12 h-12 p-2" />
+  </div>
+  <div class="py-10">
+    <h2>{i18n.MY_PROJECTS.TITLE}</h2>
+  </div>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-24">
+    {
+      projects.map((project) => (
+        <ProjectsCard
+          image={project.IMAGE}
+          alt={project.ALT}
+          title={project.TITLE}
+          description={project.DESCRIPTION}
+          githubLink={project.GITHUB_LINK}
+          liveLink={project.LIVE_URL}
+          techStack={project.TECH_STACK}
+        />
+      ))
+    }
+  </div>
+</section>
+
+<p class="p-10 text-center">This page is under development 🚀</p>

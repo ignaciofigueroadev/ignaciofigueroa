@@ -18,12 +18,43 @@
   },
   "CHECK_MY_PROJECTS": {
     "TITLE": "Proyectos",
-    "SUBTITLE": "Mirá mis proyectos!"
+    "SUBTITLE": "Mirá mis proyectos!",
+    "LINK_TO": "/es/projects"
   },
   "NOW": {
     "TITLE": "Ahora",
     "SUBTITLE": "Que estoy haciendo?",
     "CURRENT_JOB": "Actualmente colaborando en Pawtrics Software LLC"
   },
-  "MY_PROJECTS": {}
+  "MY_PROJECTS": {
+    "GO_BACK": "/es",
+    "GO_BACK_TITLE": "Volver",
+    "TITLE": "Mis proyectos",
+    "PROJECTS": [
+      {
+        "TITLE": "MyDevNotes",
+        "DESCRIPTION": "Un blog contruido por un desarrollador para desarrolladores.",
+        "GITHUB_LINK": "https://github.com",
+        "LIVE_URL": "https://mydevnotes-chi.vercel.app"
+      },
+      {
+        "TITLE": "MyDevNotes",
+        "DESCRIPTION": "Un blog contruido por un desarrollador para desarrolladores.",
+        "GITHUB_LINK": "https://github.com",
+        "LIVE_URL": "https://mydevnotes-chi.vercel.app"
+      },
+      {
+        "TITLE": "MyDevNotes",
+        "DESCRIPTION": "Un blog contruido por un desarrollador para desarrolladores.",
+        "GITHUB_LINK": "https://github.com",
+        "LIVE_URL": "https://mydevnotes-chi.vercel.app"
+      },
+      {
+        "TITLE": "MyDevNotes",
+        "DESCRIPTION": "Un blog contruido por un desarrollador para desarrolladores.",
+        "GITHUB_LINK": "https://github.com",
+        "LIVE_URL": "https://mydevnotes-chi.vercel.app"
+      }
+    ]
+  }
 }
