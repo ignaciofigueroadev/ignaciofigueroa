@@ -36,7 +36,7 @@ export function ToggleTheme({ className }: ToggleThemeProps) {
   return (
     <button
       onClick={toggleTheme}
-      className={`flex justify-center items-center p-[1rem] h-auto ${
+      className={`flex justify-center items-center p-[1rem]  ${
         theme === "dark"
           ? "bg-gradient-to-r from-amber-200 to-yellow-500"
           : "bg-[#000]"
