@@ -36,9 +36,7 @@ export function ToggleTheme({ className }: ToggleThemeProps) {
   return (
     <button
       onClick={toggleTheme}
-      className={`flex justify-center items-center p-[1rem]  ${
-        theme === "dark" ? "border-white border-2" : "border-black border-2"
-      } hover:scale-105 duration-200 cursor-default md:col-span-1 md:row-span-1 animate-fade animate-duration-[1500ms] animate-normal ${className}`}
+      className={`flex justify-center items-center p-[1rem] bg-gradient-to-r from-red-500 to-orange-500  hover:scale-105 duration-200 cursor-default md:col-span-1 md:row-span-1 animate-fade animate-duration-[1500ms] animate-normal ${className}`}
     >
       <img
         src={theme === "dark" ? "/icons/sun.svg" : "/icons/moon.svg"}
