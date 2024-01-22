@@ -17,10 +17,10 @@ import { ToggleTheme } from "../components/ToggleTheme";
   <AboutMe />
   <Contact />
   <ProjectsLink />
-  <ChangeLanguage />
-  <SocialMedias />
+  <ToggleTheme client:only className="rounded-lg" />
   <div class="grid">
-    <ToggleTheme client:only className="rounded-lg" />
+    <ChangeLanguage />
     <Now />
   </div>
+  <SocialMedias />
 </main>
