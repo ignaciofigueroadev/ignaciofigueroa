@@ -12,6 +12,7 @@ import "../styles/global.css";
 
 // Font
 import "@fontsource-variable/onest";
+import Footer from "../components/Footer.astro";
 ---
 
 <!doctype html>
@@ -29,9 +30,11 @@ import "@fontsource-variable/onest";
     class="container mx-auto px-4 md:px-12 lg:p-0 bg-background-color text-content max-w-6xl lg:max-h-[800px] min-h-screen"
   >
     <slot />
-  </body><style is:global>
-    body {
-      font-family: "Onest Variable", sans-serif;
-    }
-  </style>
+    <style is:global>
+      body {
+        font-family: "Onest Variable", sans-serif;
+      }
+    </style>
+    <Footer />
+  </body>
 </html>
