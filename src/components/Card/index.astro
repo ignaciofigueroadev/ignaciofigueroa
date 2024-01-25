@@ -8,7 +8,7 @@ interface Props {
   rowSpan?: string;
   href?: string;
   className?: string;
-  target?: string; 
+  target?: string;
 }
 
 const { title, body, colSpan, rowSpan, href, className, target } = Astro.props;
@@ -21,7 +21,7 @@ const { title, body, colSpan, rowSpan, href, className, target } = Astro.props;
 >
   {
     href ? (
-      <a href={href} class="h-full w-full cursor-default" target={target}>
+      <a href={href} class="h-full w-full" target={target}>
         <Content title={title} body={body}>
           <slot />
         </Content>
