@@ -14,7 +14,10 @@
     "TITLE": "Empecemos a trabajar juntos!",
     "DETAILS_TITLE": "Detalles de contacto",
     "EMAIL": "ignaciofigueroadev@gmail.com",
-    "COUNTRY": "Argentina, Buenos Aires."
+    "COUNTRY": "Argentina, Buenos Aires.",
+    "CV": {
+      "TITLE": "Chequea mi CV"
+    }
   },
   "CHECK_MY_PROJECTS": {
     "TITLE": "Proyectos",
