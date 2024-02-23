@@ -16,9 +16,17 @@ const { image, title, description, githubLink, liveLink, alt, techStack } =
 import "../styles/animations.css";
 ---
 
-<article class="rounded-md fade">
-  <img src={image} alt={alt} class="rounded-t-md" />
-  <div class="border-[1px] border-gray-700 rounded-b-lg">
+<article class="rounded-md fade w-full h-72 relative overflow-hidden group">
+  <div class="absolute inset-0 w-full h-full">
+    <img
+      src={image}
+      alt={alt}
+      class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 transform scale-100 group-hover:scale-110 opacity-50"
+    />
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+  </div>
+
+  <div class="rounded-lg relative z-10 flex flex-col justify-between h-full">
     <div class="flex flex-col gap-3 py-6 px-4">
       <h2 class="text-4xl font-bold">{title}</h2>
       <p class="">{description}</p>
