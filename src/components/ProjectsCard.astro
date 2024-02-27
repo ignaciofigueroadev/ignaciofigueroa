@@ -16,12 +16,14 @@ const { image, title, description, githubLink, liveLink, alt, techStack } =
 import "../styles/animations.css";
 ---
 
-<article class="rounded-md fade w-full h-72 relative overflow-hidden group">
+<article
+  class="rounded-md fade w-full h-72 relative overflow-hidden group text-white"
+>
   <div class="absolute inset-0 w-full h-full">
     <img
       src={image}
       alt={alt}
-      class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 transform scale-100 group-hover:scale-150 opacity-30"
+      class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 transform scale-100 group-hover:scale-150"
     />
     <div class="absolute inset-0 bg-black opacity-50"></div>
   </div>
