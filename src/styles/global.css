@@ -4,17 +4,17 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bkg: #0b0b0b;
+    --color-bkg: #000000;
     --color-content: #f2edf7;
   }
 }
 [data-theme="dark"] {
-  --color-bkg: #0b0b0b;
+  --color-bkg: #000000;
   --color-content: #f2edf7;
 }
 [data-theme="light"] {
   --color-bkg: #f2edf7;
-  --color-content: #0b0b0b;
+  --color-content: #000000;
 }
 ::-webkit-scrollbar {
   width: 0.45rem;
