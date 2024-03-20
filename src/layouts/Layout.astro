@@ -33,11 +33,12 @@ import Footer from "../components/Footer.astro";
     class="container mx-auto px-2 md:px-12 lg:p-0 bg-background-color text-content max-w-6xl lg:max-h-[800px] min-h-screen"
   >
     <slot />
-    <style is:global>
-      body {
-        font-family: "Onest Variable", sans-serif;
-      }
-    </style>
     <Footer />
   </body>
 </html>
+
+<style is:global>
+  body {
+    font-family: "Onest Variable", sans-serif;
+  }
+</style>
